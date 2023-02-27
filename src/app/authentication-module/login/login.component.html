@@ -1,0 +1,41 @@
+<div class="" style="height:100%;">
+    <div class="d-grid gap-2 col-4 mx-auto mb-2 mt-5 login">
+      <!-- <div class="row mb-2 text-center" style="width: 100%; position: relative;"> -->
+        <div class="row text-center" style="justify-content: center;">
+        <div class="cardlogo mb-2 pl-3"><img src="../../../assets/images/zinemindLogo.png" class="img-fluid"></div>
+
+        </div>
+      <!-- </div> -->
+        <div class="card">
+        <div class="card-body ">
+            <div class="mx-4 my-4 px-4 py-4">
+                <div class="h3 title">Welcome Back</div>
+                <form [formGroup]="loginForm" >
+                  <div class="mb-4">
+                    <input type="email" class="form-control form-control-lg"  placeholder="Username" formControlName="username">
+                  </div>
+                  <div class="mb-2 password">
+                    <input type="password" class="form-control form-control-lg"  placeholder="Password" formControlName="password" appShowhide>
+                  </div>
+                  <div class="d-grid gap-2 mt-4">
+                    <div class="row"><div class="col-6" style="vertical-align:center;">
+                        <small><a href="#" class="">Forgot Password?</a><br/></small>
+    
+                        </div>
+                        <div class="col-6 text-center">
+                        <button class="btn btn-md btn-primary" style="padding-right:35%;padding-left:35%;" type="submit" >Login</button>
+    
+                        </div>
+                    </div>
+                   
+
+                  </div>
+                  <!-- <div class="col-auto text-center pt-4"><p><small><a href="#" class="">Forgot Password?</a><br/>New User? <a href="#" class="">Register Now</a></small></p></div> -->
+                </form>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>  
+  
