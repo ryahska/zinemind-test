@@ -1,15 +1,23 @@
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { ToastrModule } from "ngx-toastr";
+import { ShowhideDirective } from "./directive/showhide.directive";
 
 @NgModule({
-    declarations: [],
+    declarations: [
+        ShowhideDirective,
+    ],
     imports: [
         ReactiveFormsModule,
-        FormsModule
+        FormsModule,
+        ToastrModule,
     ],
     exports: [
         ReactiveFormsModule,
-        FormsModule
+        FormsModule,
+        ShowhideDirective,
+        ToastrModule,
+    
     ],
     
     providers: [
